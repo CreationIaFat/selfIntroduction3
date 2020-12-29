@@ -1,21 +1,28 @@
 <template>
-    <div class="row h-100">
-        <div class="col-4 h-75">
-          ToppicArea
-        </div>
-        <div class="col-8 h-75">
-          ExplainArea
-        </div>
-        <div class="colh-25">
-          footerArea
-        </div>
+  <div class="row h-100">
+    <div class="col-xs-12 col-md-5 topicarea">
+      <SotahTopicArea />
     </div>
+    <div class="col-xs-12 col-md-7 explainarea">
+      <SotahExplainArea />
+    </div>
+    <!-- <div class="col-xs-12 col footerarea">
+      footerArea
+    </div> -->
+  </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import SotahTopicArea from '@/components/organisms/SotahTopicArea.vue';
+import SotahExplainArea from '@/components/organisms/SotahExplainArea.vue';
 
-@Component
+@Component({
+  components: {
+  SotahTopicArea,
+  SotahExplainArea,
+  }
+})
 export default class TopPage extends Vue {
 }
 </script>
@@ -23,6 +30,15 @@ export default class TopPage extends Vue {
 
 <style lang="scss">
 
+.topicarea {
+  background-color: aquamarine;
+}
+.explainarea {
+  background-color: bisque;
+}
+.footerarea {
+  background-color: blue;
+}
 
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
 
