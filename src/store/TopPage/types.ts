@@ -1,11 +1,14 @@
-// export interface IActions {
-// }
+    export interface IActions {
+        commitMouseOrveredItemName: string;
+    }
 
-// export interface IState {
-// }
+    export interface IState {
+        MouseOrveredItemName: string | null;
+    }
 
-// export interface IMutations {
-// }
+    export interface IMutations {
+        setMouseOrveredItemName: string;
+    }
 
-// export interface IGetters {
-// }
+    export interface IGetters {
+    }

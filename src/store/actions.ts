@@ -1,12 +1,12 @@
-import { IState, Actions, IActions, IGetters, IMutations, } from '@/store/types'
+// import { IState, Actions, IActions, IGetters, IMutations, } from '@/store/types'
 
-const actions: Actions<
-IState,
-IActions,
-IGetters,
-IMutations
-> = {
+// const actions: Actions<
+// IState,
+// IActions,
+// IGetters,
+// IMutations
+// > = {
 
-};
+// };
 
-export default actions;
+// export default actions;

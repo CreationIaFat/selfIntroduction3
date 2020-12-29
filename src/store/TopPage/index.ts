@@ -1,12 +1,12 @@
 // import getters from './getters';
-// import actions from './actions';
-// import mutations from './mutations';
-// import { IState } from './types'
+import actions from './actions';
+import mutations from './mutations';
+import { IState } from './types'
 
-// const state: IState = {
-//   jshjdh: '',
-// };
+const state: IState = {
+    MouseOrveredItemName: null, 
+};
 
-// export default {
-//     namespaced: true, state, actions, mutations, getters,
-// }
+export default {
+    namespaced: true, state, actions, mutations, /*getters,*/
+}
