@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">自己紹介-概要</router-link>
-    </div>
-    <router-view/>
+      <div id="nav">
+        <router-link to="/">自己紹介-概要</router-link>
+      </div>
+      <router-view />
   </div>
 </template>
 
@@ -17,7 +17,8 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 1%;
+  font-weight: bold;
 
   a {
     font-weight: bold;
@@ -27,5 +28,9 @@
       color: #42b983;
     }
   }
+}
+
+#main {
+  height:100%;
 }
 </style>
